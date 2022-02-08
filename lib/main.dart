@@ -81,7 +81,13 @@ class MyApp extends StatelessWidget {
               title: const Text('Flutter Layout Demo'),
             ),
             body: Column(
-              children: [titleSection, buttonSection, textSection],
+              children: [
+                Image.asset('images/lake.jpg',
+                    width: 600, height: 240, fit: BoxFit.cover),
+                titleSection,
+                buttonSection,
+                textSection
+              ],
             )));
   }
 
