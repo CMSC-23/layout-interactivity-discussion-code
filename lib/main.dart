@@ -80,7 +80,8 @@ class MyApp extends StatelessWidget {
             appBar: AppBar(
               title: const Text('Flutter Layout Demo'),
             ),
-            body: Column(
+            body: ListView(
+              // Change to ListView to support app body scrolling for smaller devices
               children: [
                 Image.asset('images/lake.jpg',
                     width: 600, height: 240, fit: BoxFit.cover),
